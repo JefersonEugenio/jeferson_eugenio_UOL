@@ -1,10 +1,10 @@
-package com.uol.cadastro.jogador;
+package com.cadastroJogador.UOL;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ApplicationTests {
+class UolApplicationTests {
 
 	@Test
 	void contextLoads() {

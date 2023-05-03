@@ -8,13 +8,13 @@
 		<version>3.1.0-M2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.uol</groupId>
-	<artifactId>cadastro.jogador</artifactId>
+	<groupId>com.cadastroJogador</groupId>
+	<artifactId>UOL</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>cadastro.jogador</name>
-	<description>Atividade de desafio. O &apos;novo&apos; sistema de cadastro de jogadores do UOL</description>
+	<name>UOL</name>
+	<description>Atividade de desafio. O novo sistema de cadastro de jogadores do UOL</description>
 	<properties>
-		<java.version>20</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>

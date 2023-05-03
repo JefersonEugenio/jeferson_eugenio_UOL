@@ -1,13 +1,13 @@
-package com.uol.cadastro.jogador;
+package com.cadastroJogador.UOL;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Application {
+public class UolApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+		SpringApplication.run(UolApplication.class, args);
 	}
 
 }
