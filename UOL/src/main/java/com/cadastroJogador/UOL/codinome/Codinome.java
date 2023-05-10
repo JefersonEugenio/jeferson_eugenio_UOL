@@ -24,4 +24,23 @@ public class Codinome {
 	public Codinome() {
 		
 	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getCodinome() {
+		return codinome;
+	}
+
+	public void setCodinome(String codinome) {
+		this.codinome = codinome;
+	}
+	
+	
+	
 }

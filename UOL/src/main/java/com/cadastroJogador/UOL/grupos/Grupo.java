@@ -19,10 +19,30 @@ public class Grupo {
 	@Id
 	@GeneratedValue(strategy = GenerationType.UUID)
 	private String id;
-	private String nomeGrupo;
+	private String grupo;
 	
 	public Grupo() {
 		
 	}
+
+	public String getGrupo() {
+		return grupo;
+	}
+
+	public void setGrupo(String grupo) {
+		this.grupo = grupo;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	
+	
+	
 	
 }
