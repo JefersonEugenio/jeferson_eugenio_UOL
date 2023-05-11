@@ -27,6 +27,12 @@ public class Jogador {
 		
 	}
 
+	public Jogador(DadosCadastroJogador dados) {
+		this.nome = dados.nome();
+		this.email = dados.email();
+		this.telefone = dados.telefone();
+	}
+	
 	public String getId() {
 		return id;
 	}
