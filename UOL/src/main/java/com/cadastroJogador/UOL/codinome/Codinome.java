@@ -20,9 +20,19 @@ public class Codinome {
 	@GeneratedValue(strategy = GenerationType.UUID)
 	private String id;
 	private String codinome;
+	private String jogador_id;
+	private String grupo_id;
 	
+
 	public Codinome() {
 		
+	}
+	
+	
+	public Codinome(DadosCadastroCodinome dados) {
+		this.codinome = dados.codinome();
+		this.jogador_id = dados.jogador_id();
+		this.grupo_id = dados.grupo_id();
 	}
 
 	public String getId() {
@@ -41,6 +51,20 @@ public class Codinome {
 		this.codinome = codinome;
 	}
 	
+	public String getJogador_id() {
+		return jogador_id;
+	}
 	
+	public void setJogador_id(String jogador_id) {
+		this.jogador_id = jogador_id;
+	}
 	
+	public String getGrupo_id() {
+		return grupo_id;
+	}
+	
+	public void setGrupo_id(String grupo_id) {
+		this.grupo_id = grupo_id;
+	}
+		
 }
