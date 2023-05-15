@@ -24,6 +24,10 @@ public class Grupo {
 	public Grupo() {
 		
 	}
+	
+	public Grupo(DadosCadastroGrupo dados) {
+		this.grupo = dados.grupo();
+	}
 
 	public String getGrupo() {
 		return grupo;
