@@ -24,7 +24,7 @@ public class JogadorController {
 	private JogadorRepository repository;
 	
 	@GetMapping
-	public List<Jogador> listar(@RequestParam String nome) {
+	public List<Jogador> listar(@RequestParam(defaultValue = "%") String nome) {
 		System.out.println(nome);
 //		return repository.findAll();
 		return repository.findByNomeLike(nome);
