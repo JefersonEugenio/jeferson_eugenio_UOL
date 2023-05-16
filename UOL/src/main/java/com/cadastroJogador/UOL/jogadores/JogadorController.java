@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import jakarta.transaction.Transactional;
@@ -23,8 +24,10 @@ public class JogadorController {
 	private JogadorRepository repository;
 	
 	@GetMapping
-	public List<Jogador> listar() {
-		return repository.findAll();
+	public List<Jogador> listar(@RequestParam String nome) {
+		System.out.println(nome);
+//		return repository.findAll();
+		return repository.findByNomeLike(nome);
 	}
 	
 	@PostMapping
