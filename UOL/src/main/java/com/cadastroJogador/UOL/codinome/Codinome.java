@@ -1,9 +1,15 @@
 package com.cadastroJogador.UOL.codinome;
 
+import com.cadastroJogador.UOL.grupos.Grupo;
+import com.cadastroJogador.UOL.jogadores.Jogador;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.MapsId;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -34,6 +40,16 @@ public class Codinome {
 		this.jogador_id = dados.jogador_id();
 		this.grupo_id = dados.grupo_id();
 	}
+	
+	@ManyToOne()
+	@MapsId("jogadorId")
+	@JoinColumn(name="jogador_id")
+	private Jogador jogador;
+	
+	@ManyToOne() 
+	@MapsId("grupoId")
+	@JoinColumn(name="grupo_id")
+	private Grupo grupo;
 
 	public String getId() {
 		return id;
